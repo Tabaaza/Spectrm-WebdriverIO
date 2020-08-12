@@ -10,7 +10,7 @@ describe('Spectrm Login Page', () => {
 
     it('Should login with valid credentials', () => {
         LoginPage.open();
-        LoginPage.login('omar.tabaza@gmail.com', 'Hehe!((@2');
+        LoginPage.login(<username>, <password>);
         expect(Selectors.LogoutSelecotr).toBeExisting();
         expect(Selectors.LogoutSelecotr).toHaveTextContaining(
             'Logout');
